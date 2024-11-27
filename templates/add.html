@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block title %} Add Greeting {% endblock %}
+{% block content %}
+    <p>You can enter your name here, and we’ll greet you! Other users will see it and be jealous.</p>
+    <br>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <br>
+        <button>create a greeting for me</button>
+        <br>
+        {{ errors }}
+    </form>
+{% endblock %}

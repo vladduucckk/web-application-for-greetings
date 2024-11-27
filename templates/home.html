@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %} Greetings {% endblock %}
+{% block content %}
+<p>Below, you can see the lucky ones who wrote their names and became part of a great history</p>
+    <br><br>
+    {% for items in data %}
+        <div class="greeting-user-div">
+        <h1>We greet the user: {{ items.name }}</h1>
+            <p class="greeting-user-p">He explored this meaningless website and entered his name in: <b>{{ items.joined_in|date:"Y-m-d H:i" }}</b></p>
+        </div><br>
+    {% endfor %}
+{% endblock %}

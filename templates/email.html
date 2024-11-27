@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block title %} Greeting Email {% endblock %}
+{% block content %}
+    <p>If it’s not enough for you that you’ve already been greeted and your name is now featured on the most pointless
+        website, I can send you an email to greet you personally. Just enter your email in this field.</p>
+    <br>
+    <form method="get">
+        {{ form.as_p }}
+        <br>
+        <button>send me a greeting</button>
+    </form>
+    <br>
+    <b><p>{{ alert|upper }}</p></b>
+{% endblock %}
