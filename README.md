@@ -50,6 +50,8 @@ EMAIL_HOST_USER=your_email@gmail.com
 EMAIL_HOST_PASSWORD=your_email_password
 ```
 
+[greetings site](https://vladduucckk.pythonanywhere.com/)
+
 ### License
 
 ### Key Points:
